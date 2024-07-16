@@ -1,0 +1,124 @@
+@media only screen and (max-width : 480px) {
+    .container{
+        width: 90%;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+    /*Navbar Section*/
+    .navbar-desc{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+    }   
+    .nav-mobile{
+        display: none;
+    }
+    #check{
+        opacity: 0;
+    }
+    .checkbtn {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    .checkbtn {
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    #check:checked ~ .nav-mobile {
+        display: block;
+    }
+    .nav-mobile {
+        position: absolute;
+        top: 6.5rem;
+        right: 0;
+        background: #222831;
+        z-index: 1;
+        width: 200px;
+    }
+    .nav-mobile a {
+        color: #fff;
+        padding: 1rem 1.5rem;
+        display: block;
+        text-decoration: none;
+    }
+
+    /*Hero Section*/
+    .hero{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+    .hero .content h1{
+        font-size: 37px;
+    }
+    .hero img{
+        padding: 45px 0;
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    /*About Section*/
+    .about{
+        flex-direction: column;
+    }
+    .about .exp p{
+        text-align: center;
+    }
+    /*Skill Section*/
+    .skills {       
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    /*Experience Section*/
+    .experience{
+        flex-direction: column;
+    }
+    .experience div:last-child::before{
+        display: none;
+    }
+
+    /*Portfolio Section*/
+    .portfolio .section-title, .portfolio .section-desc{
+        width: 100%;
+    }
+    .portfolio-container .item{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .portfolio-container .item img{
+        width: 100%;
+    }
+    .portfolio-container .item:nth-child(2){
+        flex-direction: column;
+        gap: 20px;
+    }
+    .first ,.second{
+        width: 100%!important;
+    }
+    /*Contact Section*/
+    .contact{
+        padding: 60px 0 30px 0;
+    }
+    .contact-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .contact-container div{
+        width: 100%;
+    }
+    footer .logo{
+        text-align: left;
+    }
+    footer nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social{
+        justify-content: flex-start;
+    }
+}
